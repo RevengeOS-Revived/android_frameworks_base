@@ -63,7 +63,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.android.internal.custom.PixelPropsUtils;
+import com.revengeos.internal.util.PixelPropsUtils;
 
 /**
  * Base class for implementing application instrumentation code.  When running
