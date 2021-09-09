@@ -1162,8 +1162,11 @@ public class Instrumentation {
                 .instantiateApplication(cl, className);
         app.attach(context);
         maybeSpoofBuild(app);
-        String packageName = app.getPackageName();
-        PixelPropsUtils.setProps(packageName);
+        String patchCustom = Build.VERSION.SECURITY_PATCH_CUSTOM;
+        if ("".equals(patchCustom)) {
+            String packageName = app.getPackageName();
+            PixelPropsUtils.setProps(packageName);
+        }
         return app;
     }
     
@@ -1182,8 +1185,11 @@ public class Instrumentation {
         Application app = (Application)clazz.newInstance();
         app.attach(context);
         maybeSpoofBuild(app);
-        String packageName = app.getPackageName();
-        PixelPropsUtils.setProps(packageName);
+        String patchCustom = Build.VERSION.SECURITY_PATCH_CUSTOM;
+        if ("".equals(patchCustom)) {
+            String packageName = app.getPackageName();
+            PixelPropsUtils.setProps(packageName);
+        }
         return app;
     }
 
