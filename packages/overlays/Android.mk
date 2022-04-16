@@ -78,6 +78,9 @@ LOCAL_REQUIRED_MODULES := \
         IconPackOutlineAndroidOverlay \
         IconPackOutlineSettingsOverlay \
         IconPackOutlineSystemUIOverlay \
+        IconPackDoraAndroidOverlay \
+        IconPackDoraSettingsOverlay \
+        IconPackDoraSystemUIOverlay \
 	NavigationBarMode3ButtonOverlay \
 	NavigationBarModeGesturalOverlay \
 	NavigationBarModeGesturalOverlayNarrowBack \
