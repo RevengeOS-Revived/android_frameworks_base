@@ -1161,12 +1161,8 @@ public class Instrumentation {
         Application app = getFactory(context.getPackageName())
                 .instantiateApplication(cl, className);
         app.attach(context);
-        maybeSpoofBuild(app);
-        String patchCustom = Build.VERSION.SECURITY_PATCH_CUSTOM;
-        if ("".equals(patchCustom)) {
-            String packageName = context.getPackageName();
-            PixelPropsUtils.setProps(packageName);
-        }
+        String packageName = context.getPackageName();
+        PixelPropsUtils.setProps(packageName);
         return app;
     }
     
@@ -1184,12 +1180,8 @@ public class Instrumentation {
             ClassNotFoundException {
         Application app = (Application)clazz.newInstance();
         app.attach(context);
-        maybeSpoofBuild(app);
-        String patchCustom = Build.VERSION.SECURITY_PATCH_CUSTOM;
-        if ("".equals(patchCustom)) {
-            String packageName = context.getPackageName();
-            PixelPropsUtils.setProps(packageName);
-        }
+        String packageName = context.getPackageName();
+        PixelPropsUtils.setProps(packageName);
         return app;
     }
 
