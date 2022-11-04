@@ -1164,7 +1164,7 @@ public class Instrumentation {
         maybeSpoofBuild(app);
         String patchCustom = Build.VERSION.SECURITY_PATCH_CUSTOM;
         if ("".equals(patchCustom)) {
-            String packageName = app.getPackageName();
+            String packageName = context.getPackageName();
             PixelPropsUtils.setProps(packageName);
         }
         return app;
@@ -1187,7 +1187,7 @@ public class Instrumentation {
         maybeSpoofBuild(app);
         String patchCustom = Build.VERSION.SECURITY_PATCH_CUSTOM;
         if ("".equals(patchCustom)) {
-            String packageName = app.getPackageName();
+            String packageName = context.getPackageName();
             PixelPropsUtils.setProps(packageName);
         }
         return app;
