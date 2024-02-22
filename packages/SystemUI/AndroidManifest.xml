@@ -276,9 +276,6 @@
     <protected-broadcast android:name="com.android.settingslib.action.UNREGISTER_SLICE_RECEIVER" />
     <protected-broadcast android:name="com.android.settings.flashlight.action.FLASHLIGHT_CHANGED" />
 
-    <!-- QS Tiles -->
-    <uses-permission android:name="lineageos.permission.MANAGE_LIVEDISPLAY" />
-
     <!-- Asus Long screenshot -->
     <uses-permission android:name="com.asus.stitchimage.permission.EXPORTED_FOR_ASUS_APPS"/>
 
